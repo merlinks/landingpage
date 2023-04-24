@@ -52,15 +52,15 @@ body{font-family:Lato, sans-serif;}
 .g:hover{cursor:pointer}
 .g img{width:100%;transition:transform .2s}
 .g img:hover{transform:scale(1.1, 1.1)}
-.h{position:absolute;width:100%;height:100%;background:url('in_css_0fc1ff8ed12467c771fd6c10398db0d9.statiin_css_a9d9baa21e3bf93df71ff31c240a74d4.static.png');background-size:contain}
-.h div{position:absolute;width:100%;height:100%;background:url('in_css_a70bc7d0cc8de600b84f2708efbfeaa4.statiin_css_0fc1ff8ed12467c771fd6c10398db0d9.statiin_css_a9d9baa21e3bf93df71ff31c240a74d4.static.png');background-size:contain}
-.i{position:absolute;width:100%;height:100%;background:url('in_css_0fc1ff8ed12467c771fd6c10398db0d9.statiin_css_a9d9baa21e3bf93df71ff31c240a74d4.static.png');background-size:contain}
+.h{position:absolute;width:100%;height:100%;background:url('in_css_0fc1ff8ed12467c771fd6c10398db0d9.static.png');background-size:contain}
+.h div{position:absolute;width:100%;height:100%;background:url('in_css_a70bc7d0cc8de600b84f2708efbfeaa4.static.png');background-size:contain}
+.i{position:absolute;width:100%;height:100%;background:url('in_css_0fc1ff8ed12467c771fd6c10398db0d9.static.png');background-size:contain}
 .i div:nth-child(1){position:absolute;width:100%;height:100%}
-.i div:nth-child(2){position:absolute;width:100%;height:100%;background:url('in_css_a70bc7d0cc8de600b84f2708efbfeaa4.statiin_css_0fc1ff8ed12467c771fd6c10398db0d9.statiin_css_a9d9baa21e3bf93df71ff31c240a74d4.static.png');background-size:contain}
+.i div:nth-child(2){position:absolute;width:100%;height:100%;background:url('in_css_a70bc7d0cc8de600b84f2708efbfeaa4.static.png');background-size:contain}
 .i div:nth-child(3){position:absolute;width:100%;height:100%;background:url('in_css_55fe7482b7b850b44601a25eb27d25f1.static.png');background-size:contain}
 #i{margin:5px 0}
 .j{background:#eeeff4;padding:10px;margin-top:5px;font-size:0.8em;line-height:100%}
-.k{display:inline-block;height:12px;width:12px;background:url('in_css_8bfa27b3a9fcf0cd50768c1b6ed418ab.statiin_css_0fc1ff8ed12467c771fd6c10398db0d9.statiin_css_a9d9baa21e3bf93df71ff31c240a74d4.static.png') no-repeat center center;margin-right:2px;cursor:pointer}
+.k{display:inline-block;height:12px;width:12px;background:url('in_css_8bfa27b3a9fcf0cd50768c1b6ed418ab.static.png') no-repeat center center;margin-right:2px;cursor:pointer}
 .l{color:#3b5998;cursor:pointer}
 .n{background:#d8dce6;height:48px;width:48px;float:left}
 .n img{display:block;height:48px;width:48px}
