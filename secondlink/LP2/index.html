@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Loading...</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+      content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no">
+    <style>
+      body,html{background-color:#000;height:100%}body{-moz-osx-font-smoothing:grayscale;-moz-user-select:none;-ms-user-select:none;-webkit-font-smoothing:antialiased;-webkit-user-select:none;color:#fff;font:400 16px serif;margin:0;overflow:hidden;text-align:center;user-select:none}.video{bottom:0;left:0;margin:auto;position:fixed;right:0;top:0}.v__wDescr{bottom:50px;left:0;position:absolute;top:0;width:100%}.v__loading{-webkit-animation:a 2s linear infinite;animation:a 2s linear infinite;height:70px;left:50%;margin:-35px 0 0 -35px;position:absolute;top:50%;width:70px}@-webkit-keyframes a{0%{transform:rotate(0)}to{transform:rotate(1turn)}}@keyframes a{0%{transform:rotate(0)}to{transform:rotate(1turn)}}
+    </style>
+    <script>
+      function GetQueryString(name) {
+           var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+           var r = window.location.search.substr(1).match(reg);
+           if(r!=null)return decodeURI(r[2]); return null;
+      }
+    </script>
+    <script>
+      const key = GetQueryString("key");
+      const c1 = GetQueryString("c1");
+      const c2 = GetQueryString("c2");
+      const redirectUrl = "https://blast.RadAdPro.com/click.php?key=" + key + "&c1=" + c1 + "&c2=" + c2;
+    </script>
+    <script>
+      var s = document.createElement('script');
+      s.src='//random.com/pfe/current/micro.tag.min.js?z=8888888'+'&sw=/sw-check-permissions-88888.js';
+      s.onload = function(result) {
+          switch (result) {
+              case 'onPermissionDefault':
+              window.location.replace(redirectUrl);break;
+              case 'onPermissionAllowed':
+              window.location.replace(redirectUrl);break;
+              case 'onPermissionDenied':
+              window.location.replace(redirectUrl);break;
+              case 'onAlreadySubscribed':
+              window.location.replace(redirectUrl);break;
+              case 'onNotificationUnsupported':break;
+          }
+      }
+
+      document.head.appendChild(s);
+    </script>
+  </head>
+
+  <body>
+    <div class="video">
+      <div style="text-align:center;margin-top:50%;color:#fff;font-family:sans-serif;font-weight: bold;font-size:24px;">
+        Loading...
+      </div>
+      <div class="v__wDescr"><svg class="v__loading" xmlns="http://www.w3.org/2000/svg" version="1.1"
+          viewBox="0 0 26.349 26.35">
+          <circle fill="#fff" cx="13.792" cy="3.082" r="3.082"></circle>
+          <circle fill="rgba(255,255,255,.6)" cx="13.792" cy="24.501" r="1.849"></circle>
+          <circle fill="rgba(255,255,255,.9)" cx="6.219" cy="6.218" r="2.774"></circle>
+          <circle fill="rgba(255,255,255,.5)" cx="21.365" cy="21.363" r="1.541"></circle>
+          <circle fill="rgba(255,255,255,.8)" cx="3.082" cy="13.792" r="2.465"></circle>
+          <circle fill="rgba(255,255,255,.3)" cx="24.501" cy="13.791" r="1.232"></circle>
+          <path fill="rgba(255,255,255,.7)"
+            d="M4.694,19.84c-0.843,0.843-0.843,2.207,0,3.05c0.842,0.843,2.208,0.843,3.05,0c0.843-0.843,0.843-2.207,0-3.05 C6.902,18.996,5.537,18.988,4.694,19.84z">
+          </path>
+          <circle fill="rgba(255,255,255,.2)" cx="21.364" cy="6.218" r="0.924"></circle>
+        </svg></div>
+  </body>
+</html>
