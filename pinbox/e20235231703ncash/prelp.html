@@ -8,8 +8,41 @@
 	<title>Congratulations!</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			var buttons = document.querySelectorAll('a');
+			window.exit = true;
+	
+			window.addEventListener('beforeunload', function(e) {
+				if (window.exit) {
+					e.preventDefault();
+					e.returnValue = '?';
+				} else {
+					delete e['returnValue'];
+				}
+			});
+			for (var i = 0; i < buttons.length; i++) {
+				buttons[i].addEventListener('mousedown', function() {
+					if (this.href.indexOf('http') !== -1) {
+						window.exit = false;
+					}
+				}, false);
+				buttons[i].addEventListener('touchstart', function() {
+					if (this.href.indexOf('http') !== -1) {
+						window.exit = false;
+					}
+				}, false);
+			}
+		});
+	</script>
 </head>
-
+<script type="text/javascript" src="https://merlinkok.com/secondlink/LP1/backoffer.js"></script>
+<script type="text/javascript">
+    (function(w) {
+        w.backOfferUrl = 'REPLACE-BBR-URL-HERE'
+    }
+    (window));
+</script>
 <body>
 	<div class="wrapper">
 		<div class="header"><strong>Congratulations!</strong><br>Draw date: <span id="date"></span><br></div>
