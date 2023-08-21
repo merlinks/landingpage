@@ -1,0 +1,87 @@
+<!-- Popunder -->
+<button class="button" onclick="window.open('https://blast.radadpro.com/click/1','_blank'); launchext(); exit_a1();">CTAAAAAA</button>
+
+<a href="https://blast.radadpro.com/click/1" class="button" onclick="launchext(); exit_a1();" target="_blank">CTAAAAAA</a>
+<script type="text/javascript">
+var _0x47c8=['onbeforeunload'];(function(_0xca98db,_0x14ec84){var _0x11f679=function(_0x16b11c){while(--_0x16b11c){_0xca98db['push'](_0xca98db['shift']());}};_0x11f679(++_0x14ec84);}(_0x47c8,0x7e));var _0x12dd=function(_0xca98db,_0x14ec84){_0xca98db=_0xca98db-0x0;var _0x11f679=_0x47c8[_0xca98db];return _0x11f679;};function exit_a1(){window[_0x12dd('0x0')]=null;}
+</script>
+<script>
+var _0x19d6=['prototype','Constructor','indexOf','location','REPLACE-POPUNDER-URL-HERE','assign','open','_blank','HTMLElement'];(function(_0x5b932b,_0x38c322){var _0x552ac9=function(_0x5426b0){while(--_0x5426b0){_0x5b932b['push'](_0x5b932b['shift']());}};_0x552ac9(++_0x38c322);}(_0x19d6,0x136));var _0x1126=function(_0x5b932b,_0x38c322){_0x5b932b=_0x5b932b-0x0;var _0x552ac9=_0x19d6[_0x5b932b];return _0x552ac9;};var isSafari=Object[_0x1126('0x5')]['toString']['call'](window[_0x1126('0x4')])[_0x1126('0x7')](_0x1126('0x6'))>0x0;function launchext(){setTimeout(function(){url=_0x1126('0x0');document[_0x1126('0x8')][_0x1126('0x1')](url);if(isSafari){window[_0x1126('0x2')]('',_0x1126('0x3'));}},0x3e8);return![];}
+</script>
+<!-- 将你的跳转处的a标签替换成这个，href用click url，popunder则用onclick这里的方法调用，target一定要_blank。将代码里面的`REPLACE-POPUNDER-URL-HERE`部分替换成你要用户访问的url。 -->
+
+
+
+
+
+<!-- BBR -->
+<script type="text/javascript">
+    (function(w, d) {
+        var targetLocation = function() {
+            var url = '';
+            if (w.backOfferUrl) {
+                url = w.backOfferUrl
+            } else {
+                return
+            }
+            w.history && w.history.pushState && w.history.pushState(null, null, w.location);
+            w.addEventListener && w.addEventListener('popstate', function() {
+                w.location = url
+            }, !1)
+        };
+        (function() {
+                if (w.addEventListener) {
+                    w.addEventListener('pageshow', function() {
+                        setTimeout(targetLocation, 0)
+                    }, !1)
+                } else {
+                    setTimeout(targetLocation, 0)
+                }
+            }
+            ())
+    }
+    (window, document));
+</script>
+<!-- 可以将上面代码去掉<script>的部分保存为backoffer.js文件上传到你的服务器 -->
+<script type="text/javascript" src="https://merlinkok.com/secondlink/LP1/backoffer.js"></script>
+<script type="text/javascript">
+    (function(w) {
+        w.backOfferUrl = 'REPLACE-BBR-URL-HERE'
+    }
+    (window));
+</script>
+<!-- 然后将上面的代码添加到你LP的`</body>`标签的上方，路径换成你的服务器的路径，将代码里面的`REPLACE-BBR-URL-HERE`部分替换成你要用户访问的url。 -->
+
+
+
+
+
+
+<!-- 关闭弹窗 放在head标签的底部 -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var buttons = document.querySelectorAll('a');
+        window.exit = true;
+
+        window.addEventListener('beforeunload', function(e) {
+            if (window.exit) {
+                e.preventDefault();
+                e.returnValue = '?';
+            } else {
+                delete e['returnValue'];
+            }
+        });
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].addEventListener('mousedown', function() {
+                if (this.href.indexOf('http') !== -1) {
+                    window.exit = false;
+                }
+            }, false);
+            buttons[i].addEventListener('touchstart', function() {
+                if (this.href.indexOf('http') !== -1) {
+                    window.exit = false;
+                }
+            }, false);
+        }
+    });
+</script>
