@@ -37,15 +37,15 @@
 			<div class="info">All you have to do is to choose the right gift box<br><strong>to win ₦ 100,000 </strong>
 			</div>
 			<div class="boxs">
-				<div class="box"><img src="img/box.jpg"></div>
-				<div class="box"><img src="img/box.jpg"></div>
-				<div class="box"><img src="img/box.jpg"></div>
-				<div class="box"><img src="img/box.jpg"></div>
-				<div class="box"><img src="img/box.jpg"></div>
-				<div class="box"><img src="img/box.jpg"></div>
-				<div class="box"><img src="img/box.jpg"></div>
-				<div class="box"><img src="img/box.jpg"></div>
-				<div class="box"><img src="img/box.jpg"></div>
+				<div class="box"><img src="img/box_c.png"></div>
+				<div class="box"><img src="img/box_c.png"></div>
+				<div class="box"><img src="img/box_c.png"></div>
+				<div class="box"><img src="img/box_c.png"></div>
+				<div class="box"><img src="img/box_c.png"></div>
+				<div class="box"><img src="img/box_c.png"></div>
+				<div class="box"><img src="img/box_c.png"></div>
+				<div class="box"><img src="img/box_c.png"></div>
+				<div class="box"><img src="img/box_c.png"></div>
 			</div>
 			<div class="comments">
 				<div class="comment">
@@ -134,7 +134,7 @@
 			Swal.fire({
 				text: 'Unfortunately, this box is empty. You still have (2) tries. Good luck!',
 				confirmButtonText: 'OK',
-				confirmButtonColor: '#ff0000',
+				confirmButtonColor: '#ffc62f',
 				icon: 'success'
 			});
 		}
@@ -142,7 +142,7 @@
 			Swal.fire({
 				text: 'Unfortunately, this box is empty. You still have (1) try. Good luck!',
 				confirmButtonText: 'OK',
-				confirmButtonColor: '#ff0000',
+				confirmButtonColor: '#ffc62f',
 				icon: 'success'
 			});
 		}
@@ -159,11 +159,11 @@
 		$('.box').click(function () {
 			i++;
 			if (i == 1) {
-				$(this).html('<img src="img/box_open.jpg">');
+				$(this).html('<img src="img/box_o_b.png">');
 				$(dialog1()).load();
 			}
 			if (i == 2) {
-				$(this).html('<img src="img/box_open.jpg">');
+				$(this).html('<img src="img/box_o_b.png">');
 				$(dialog2()).load();
 			}
 			if (i == 3) {
