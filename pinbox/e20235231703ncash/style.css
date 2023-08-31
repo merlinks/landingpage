@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-	background: #f83600;
+	background: #000000;
 	padding: 10px;
 	font-size: 16px;
 	color: #ffffff;
@@ -48,7 +48,7 @@ body {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	background: #ff0000;
+	background: #f83600;
 	text-align: center;
 	font-size: 14px;
 	color: #ffffff;
