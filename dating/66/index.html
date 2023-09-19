@@ -1,0 +1,55 @@
+<html>
+
+<head>
+	<base href="">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="user-scalable=false, initial-scale=1.0, maximum-scale=1.0">
+	<meta content="" name="keywords">
+	<meta content="" name="description">
+	<link rel="stylesheet" type="text/css" href="css/style-asiandate.css">
+	 
+	<script type="text/javascript" src="js/jsavsc4.js"></script>
+	<meta content="" name="keywords">
+	<meta content="" name="description">
+	<link rel="stylesheet" type="text/css" href="css/lp.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/steps.js"></script>
+	<script type="text/javascript" src="js/timer.js"></script>
+	 
+</head>
+
+<body style="">
+	<section class="content">
+		<div class="step">
+			<div class="step__header">
+				<h3>ATTENTION!</h3>
+			</div>
+			<div class="step__body">
+				<p style="text-align: center;"><span class="c--blue" style="font-size: 18pt;">Are You Over 18?</span>
+				</p>
+			</div>
+			<div class="step__footer"><a href="#" class="next btn btn--accent"> YES </a><a href="#" class="next btn"> NO </a>
+			</div>
+		</div>
+	</section>
+	<div class="bg">
+		<div class="bg__item active"></div>
+	</div>
+	<br>
+	<script>
+	! function() {
+		var t;
+		var tmp = '#';
+		try {
+			for(t = 0; 10 > t; ++t) history.pushState({}, '', '');
+			onpopstate = function(t) {
+				t.state && location.replace(tmp);
+			}
+		} catch(o) {}
+	}();
+	</script>
+</body>
+
+</html>
