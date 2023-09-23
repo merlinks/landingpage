@@ -71,8 +71,7 @@ p.question {
 }
 
 .button {
-    background: #e84242;
-    /*background: linear-gradient(to bottom, rgb(44, 170, 231) 0%, rgb(0, 137, 209) 100%) repeat scroll 0% 0% transparent;
+    /*background: linear-gradient(to bottom, rgb(44, 170, 231) 0%, rgb(0, 137, 209) 100%) repeat scroll 0% 0% transparent;*/
     text-align: center;
     padding: 8px 0px;
     margin: 5px auto;
