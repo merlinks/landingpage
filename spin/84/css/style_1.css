@@ -297,10 +297,10 @@ a.claim {
 }
 
 .spinAround {
-    -webkit-animation: spin 6.6s;
-    -moz-animation: spin 6.6s;
-    -o-animation: spin 6.6s;
-    animation: spin 6.6s;
+    -webkit-animation: spin 6.8s;
+    -moz-animation: spin 6.8s;
+    -o-animation: spin 6.8s;
+    animation: spin 6.8s;
     -webkit-animation-timing-function: ease;
     -moz-animation-timing-function: ease;
     -o-animation-timing-function: ease;
